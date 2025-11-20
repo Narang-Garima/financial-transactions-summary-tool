@@ -40,5 +40,5 @@ For features, this means:
 ---
 
 ## Summary
-Our team conducted a liftoff meeting to align on mission, vision, working agreements, and success priorities. Each member understands their responsibilities and the sprint plan. With a clear Definition of Done, we are ready to execute Sprint 1 efficiently, ensuring both technical progress and adherence to Agile practices throughout the week.
+Our team conducted a liftoff meeting to align on mission, vision, working agreements, and success priorities. Each member understands their responsibilities and the sprint plan. With the clear Definition of Done, we are ready to execute Sprint 1 efficiently, ensuring both technical progress and adherence to Agile practices throughout the week.
 
