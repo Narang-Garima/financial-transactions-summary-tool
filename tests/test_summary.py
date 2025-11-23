@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# test/test_summary.py
-
 import sys
 import os
 import pandas as pd
@@ -13,26 +10,14 @@ from summary import summarize_transactions, category_summary
 # ----------------------------
 # Tests for summarize_transactions (US3)
 # ----------------------------
-=======
-import pandas as pd
-from src.summary import summarize_transactions
-
->>>>>>> 897352d6a5690bcefbd3caad229f2204eb36192f
 def test_summarize_transactions_basic():
     data = {
         "date": ["2024-01-01", "2024-01-02", "2024-01-03"],
         "amount": [200, -50, 100],
     }
-<<<<<<< HEAD
     df = pd.DataFrame(data)
     result = summarize_transactions(df)
 
-=======
-    
-    df = pd.DataFrame(data)
-    result = summarize_transactions(df)
-    
->>>>>>> 897352d6a5690bcefbd3caad229f2204eb36192f
     assert result["total_income"] == 300.0
     assert result["total_expenses"] == -50.0
 
@@ -42,16 +27,11 @@ def test_summarize_transactions_all_negative():
         "date": ["2024-01-01", "2024-01-02"],
         "amount": [-10, -20],
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 897352d6a5690bcefbd3caad229f2204eb36192f
     df = pd.DataFrame(data)
     result = summarize_transactions(df)
 
     assert result["total_income"] == 0.0
     assert result["total_expenses"] == -30.0
-<<<<<<< HEAD
 
 
 # ----------------------------
@@ -67,7 +47,7 @@ def test_category_summary_basic():
     result = category_summary(df)
 
     assert result.shape[0] == 2  # only food and rent categories with expenses
-    assert result.loc[result['category'] == 'food', 'total_spent'].values[0] == 50  # 20+30
+    assert result.loc[result['category'] == 'food', 'total_spent'].values[0] == 50
     assert result.loc[result['category'] == 'rent', 'total_spent'].values[0] == 50
 
 
@@ -79,5 +59,3 @@ def test_category_summary_empty():
     })
     result = category_summary(df)
     assert result.shape[0] == 0  # no expenses
-=======
->>>>>>> 897352d6a5690bcefbd3caad229f2204eb36192f
